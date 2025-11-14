@@ -63,8 +63,12 @@ export function Testimonials() {
                 {/* Author Info */}
                 <div className="flex items-center gap-4">
                   {/* Avatar */}
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-accent/20 to-primary-700/20 flex items-center justify-center text-2xl flex-shrink-0">
-                    👤
+                  <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-accent/20">
+                    <img
+                      src={TESTIMONIALS[currentIndex].avatar}
+                      alt={TESTIMONIALS[currentIndex].name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
 
                   <div>

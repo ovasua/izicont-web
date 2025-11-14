@@ -8,13 +8,15 @@ import { PRICING } from '@/lib/constants'
 
 export function Hero() {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center bg-gradient-hero overflow-hidden">
-      {/* Background decorativo */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'linear-gradient(to right, #3DCCC7 1px, transparent 1px), linear-gradient(to bottom, #3DCCC7 1px, transparent 1px)',
-          backgroundSize: '40px 40px'
-        }} />
+    <section id="inicio" className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img
+          src="/img/2.1 Hero Background Principal.png"
+          alt="Background IZICONT"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-hero" />
       </div>
 
       <Container className="relative z-10 py-32">
@@ -106,14 +108,13 @@ export function Hero() {
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
               className="relative"
             >
-              {/* Placeholder for ERP mockup */}
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-2xl border border-white/20">
-                <div className="aspect-video bg-gradient-to-br from-accent/20 to-primary-700/20 rounded-lg flex items-center justify-center">
-                  <div className="text-center text-white/60">
-                    <div className="text-6xl mb-4">📊</div>
-                    <p className="text-lg font-medium">Dashboard ERP</p>
-                  </div>
-                </div>
+              {/* ERP Dashboard Mockup */}
+              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/20">
+                <img
+                  src="/img/2.2 Dashboard ERP Mockup.png"
+                  alt="Dashboard ERP IZICONT"
+                  className="w-full h-auto rounded-lg"
+                />
               </div>
             </motion.div>
 

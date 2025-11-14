@@ -11,7 +11,11 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
           <div className="lg:col-span-1">
-            <div className="text-2xl font-bold mb-4">IZICONT</div>
+            <img
+              src="/img/1.3 Logo en Blanco.png"
+              alt="IZICONT"
+              className="h-10 w-auto mb-4"
+            />
             <p className="text-white/80 mb-4 leading-relaxed">
               Despreocúpate de los números. Enfócate en crecer.
             </p>

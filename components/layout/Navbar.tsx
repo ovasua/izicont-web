@@ -36,13 +36,12 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#inicio" className="flex items-center space-x-2">
-              <div className={cn(
-                'text-2xl font-bold transition-colors',
-                isScrolled ? 'text-primary-900' : 'text-white'
-              )}>
-                IZICONT
-              </div>
+            <a href="#inicio" className="flex items-center">
+              <img
+                src={isScrolled ? "/img/1.1 Logo Principal.png" : "/img/1.3 Logo en Blanco.png"}
+                alt="IZICONT"
+                className="h-10 w-auto transition-opacity"
+              />
             </a>
           </div>
 
