@@ -120,8 +120,8 @@ export function Pricing() {
           </div>
 
           <p className="text-sm text-gray-600 text-center mt-4">
-            Comisión calculada como {PRICING.commission}% + IGV sobre ventas mensuales.
-            La tabla muestra valores referenciales promedio.
+            Comisión calculada como {PRICING.commission}% + IGV sobre ventas mensuales (sin IGV).
+            Los valores mostrados son exactos según la fórmula: (Ventas × 2%) × 1.18
           </p>
         </motion.div>
 

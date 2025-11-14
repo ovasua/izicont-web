@@ -127,7 +127,7 @@ export const TESTIMONIALS = [
 export const FAQ_ITEMS = [
   {
     question: '¿Cómo funciona exactamente el modelo de comisión?',
-    answer: 'Pagas el 2% + IGV sobre tus ventas mensuales. Por ejemplo, si vendes S/ 100,000 al mes, pagas aproximadamente S/ 2,360 (2% + IGV). Si un mes vendes menos, pagas menos. Si no vendes nada, no pagas nada. La inscripción única de S/ 99 se paga solo una vez al registrarte.',
+    answer: 'Pagas el 2% + IGV sobre tus ventas mensuales (sin IGV). Por ejemplo, si tus ventas son S/ 100,000 (sin IGV), pagas S/ 2,360 total (S/ 2,000 de comisión + S/ 360 de IGV). Si un mes vendes menos, pagas menos. Si no vendes nada, no pagas nada. La inscripción única de S/ 99 se paga solo una vez al registrarte.',
   },
   {
     question: '¿Qué incluye exactamente el servicio de IZICONT?',
@@ -201,12 +201,12 @@ export const HOW_IT_WORKS = [
 ] as const
 
 export const PRICING_TABLE = [
-  { ventas: 'S/ 64,375', comision: 'S/ 1,550' },
-  { ventas: 'S/ 128,750', comision: 'S/ 3,099' },
-  { ventas: 'S/ 214,583', comision: 'S/ 5,165' },
-  { ventas: 'S/ 300,417', comision: 'S/ 7,230' },
-  { ventas: 'S/ 386,250', comision: 'S/ 9,295' },
-  { ventas: 'S/ 472,083', comision: 'S/ 11,360' },
-  { ventas: 'S/ 557,917', comision: 'S/ 13,425' },
-  { ventas: 'S/ 643,750', comision: 'S/ 15,491' },
+  { ventas: 'S/ 50,000', comision: 'S/ 1,180' },
+  { ventas: 'S/ 100,000', comision: 'S/ 2,360' },
+  { ventas: 'S/ 150,000', comision: 'S/ 3,540' },
+  { ventas: 'S/ 200,000', comision: 'S/ 4,720' },
+  { ventas: 'S/ 250,000', comision: 'S/ 5,900' },
+  { ventas: 'S/ 300,000', comision: 'S/ 7,080' },
+  { ventas: 'S/ 400,000', comision: 'S/ 9,440' },
+  { ventas: 'S/ 500,000', comision: 'S/ 11,800' },
 ] as const
