@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
+  basePath: '/izicont-web',
+  assetPrefix: '/izicont-web/',
 }
 
 export default nextConfig
