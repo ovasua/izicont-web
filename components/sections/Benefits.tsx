@@ -37,17 +37,13 @@ export function Benefits() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Card hover className="h-full">
-                {/* Icon/Image placeholder */}
-                <div className="mb-6">
-                  <div className="w-full h-48 bg-gradient-to-br from-accent/10 to-primary-700/10 rounded-xl flex items-center justify-center">
-                    <div className="text-6xl">
-                      {benefit.id === 'erp' && '💻'}
-                      {benefit.id === 'equipo' && '👥'}
-                      {benefit.id === 'mantenimiento' && '🔧'}
-                      {benefit.id === 'inscripcion' && '⚡'}
-                      {benefit.id === 'comision' && '💰'}
-                    </div>
-                  </div>
+                {/* Benefit Image */}
+                <div className="mb-6 rounded-xl overflow-hidden">
+                  <img
+                    src={benefit.image}
+                    alt={benefit.title}
+                    className="w-full h-auto"
+                  />
                 </div>
 
                 {/* Title */}

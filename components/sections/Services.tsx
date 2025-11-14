@@ -41,21 +41,18 @@ export function Services() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Card hover className="h-full text-center">
-                {/* Icon */}
+                {/* Icon SVG */}
                 <motion.div
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ type: "spring", stiffness: 300 }}
                   className="mb-6 inline-block"
                 >
-                  <div className="w-20 h-20 bg-gradient-to-br from-accent/20 to-primary-700/20 rounded-2xl flex items-center justify-center mx-auto">
-                    <div className="text-4xl">
-                      {service.id === 'outsourcing' && '📚'}
-                      {service.id === 'tributaria' && '📋'}
-                      {service.id === 'laboral' && '👔'}
-                      {service.id === 'constitucion' && '🏢'}
-                      {service.id === 'erp' && '💼'}
-                      {service.id === 'reportes' && '📊'}
-                    </div>
+                  <div className="w-24 h-24 mx-auto">
+                    <img
+                      src={service.icon}
+                      alt={service.title}
+                      className="w-full h-full"
+                    />
                   </div>
                 </motion.div>
 

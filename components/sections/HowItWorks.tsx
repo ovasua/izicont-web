@@ -51,13 +51,13 @@ export function HowItWorks() {
                     {step.badge}
                   </Badge>
 
-                  {/* Icon/Illustration placeholder */}
-                  <div className="mb-6 p-6 bg-gradient-to-br from-accent/10 to-primary-700/10 rounded-xl">
-                    <div className="text-center">
-                      <div className="text-5xl mb-2">
-                        {step.step === 1 ? '📝' : step.step === 2 ? '💼' : '📊'}
-                      </div>
-                    </div>
+                  {/* Illustration image */}
+                  <div className="mb-6 rounded-xl overflow-hidden">
+                    <img
+                      src={step.image}
+                      alt={step.title}
+                      className="w-full h-auto"
+                    />
                   </div>
 
                   {/* Title */}

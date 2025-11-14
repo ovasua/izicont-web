@@ -68,14 +68,13 @@ export function ProblemSolution() {
               ))}
             </div>
 
-            {/* Illustration placeholder */}
-            <div className="mt-8 p-8 bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl">
-              <div className="flex items-center justify-center text-red-400">
-                <div className="text-center">
-                  <div className="text-6xl mb-2">⚠️</div>
-                  <p className="text-sm font-medium text-gray-600">Caos de aplicaciones</p>
-                </div>
-              </div>
+            {/* Problem Illustration */}
+            <div className="mt-8 rounded-2xl overflow-hidden">
+              <img
+                src="/img/3.1_problema_caos_aplicaciones.png"
+                alt="Caos de aplicaciones"
+                className="w-full h-auto"
+              />
             </div>
           </motion.div>
 
@@ -116,14 +115,13 @@ export function ProblemSolution() {
               ))}
             </div>
 
-            {/* Illustration placeholder */}
-            <div className="mt-8 p-8 bg-gradient-to-br from-accent/10 to-primary-700/10 rounded-2xl">
-              <div className="flex items-center justify-center text-accent">
-                <div className="text-center">
-                  <div className="text-6xl mb-2">✨</div>
-                  <p className="text-sm font-medium text-gray-600">Solución unificada IZICONT</p>
-                </div>
-              </div>
+            {/* Solution Illustration */}
+            <div className="mt-8 rounded-2xl overflow-hidden">
+              <img
+                src="/img/3.2_solucion_izicont_unificada.png"
+                alt="Solución unificada IZICONT"
+                className="w-full h-auto"
+              />
             </div>
 
             <div className="mt-8">
