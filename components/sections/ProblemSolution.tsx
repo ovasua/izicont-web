@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
+import { getAssetPath } from '@/lib/utils'
 
 export function ProblemSolution() {
   const problemPoints = [
@@ -71,7 +72,7 @@ export function ProblemSolution() {
             {/* Problem Illustration */}
             <div className="mt-8 rounded-2xl overflow-hidden">
               <img
-                src="/img/3.1_problema_caos_aplicaciones.png"
+                src={getAssetPath("/img/3.1_problema_caos_aplicaciones.png")}
                 alt="Caos de aplicaciones"
                 className="w-full h-auto"
               />
@@ -118,7 +119,7 @@ export function ProblemSolution() {
             {/* Solution Illustration */}
             <div className="mt-8 rounded-2xl overflow-hidden">
               <img
-                src="/img/3.2_solucion_izicont_unificada.png"
+                src={getAssetPath("/img/3.2_solucion_izicont_unificada.png")}
                 alt="Solución unificada IZICONT"
                 className="w-full h-auto"
               />

@@ -1,5 +1,6 @@
 import { Container } from '@/components/ui/Container'
 import { CONTACT, SOCIAL_LINKS } from '@/lib/constants'
+import { getAssetPath } from '@/lib/utils'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -12,7 +13,7 @@ export function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <img
-              src="/img/1.3 Logo en Blanco.png"
+              src={getAssetPath("/img/1.3 Logo en Blanco.png")}
               alt="IZICONT"
               className="h-10 w-auto mb-4"
             />

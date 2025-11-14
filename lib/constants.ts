@@ -1,3 +1,5 @@
+import { getAssetPath } from './utils'
+
 export const CONTACT = {
   phone: '+51 993 124 171',
   email: 'contacto@izicont.com',
@@ -21,37 +23,37 @@ export const SERVICES = [
   {
     id: 'outsourcing',
     title: 'Outsourcing Contable',
-    icon: '/img/6.1_icono_outsourcing_contable.svg',
+    icon: getAssetPath('/img/6.1_icono_outsourcing_contable.svg'),
     description: 'Procesamiento completo de tu contabilidad. Registros, libros, balances y estados financieros. Todo al día, siempre.',
   },
   {
     id: 'tributaria',
     title: 'Asesoría Tributaria',
-    icon: '/img/6.2_icono_asesoria_tributaria.svg',
+    icon: getAssetPath('/img/6.2_icono_asesoria_tributaria.svg'),
     description: 'Cumplimiento tributario con SUNAT. Declaraciones, PDT, libros electrónicos y planificación fiscal.',
   },
   {
     id: 'laboral',
     title: 'Asesoría Laboral',
-    icon: '/img/6.3_icono_asesoria_laboral.svg',
+    icon: getAssetPath('/img/6.3_icono_asesoria_laboral.svg'),
     description: 'Gestión de planillas, contratos, y cumplimiento con SUNAFIL. Evita multas y contingencias laborales.',
   },
   {
     id: 'constitucion',
     title: 'Constitución de Empresas',
-    icon: '/img/6.4_icono_constitucion_empresas.svg',
+    icon: getAssetPath('/img/6.4_icono_constitucion_empresas.svg'),
     description: 'Te ayudamos a formalizar tu negocio. Constitución legal, RUC, licencias y todo lo necesario para empezar.',
   },
   {
     id: 'erp',
     title: 'ERP Cloud Completo',
-    icon: '/img/6.5_icono_erp_cloud.svg',
+    icon: getAssetPath('/img/6.5_icono_erp_cloud.svg'),
     description: 'Sistema de gestión empresarial con módulos de ventas, compras, inventario, finanzas y más. Siempre actualizado.',
   },
   {
     id: 'reportes',
     title: 'Reportes en Tiempo Real',
-    icon: '/img/6.6_icono_reportes_tiempo_real.svg',
+    icon: getAssetPath('/img/6.6_icono_reportes_tiempo_real.svg'),
     description: 'Dashboards personalizados, KPIs, gráficos y reportes exportables. Información para tomar decisiones inteligentes.',
   },
 ] as const
@@ -61,31 +63,31 @@ export const BENEFITS = [
     id: 'erp',
     title: 'ERP Cloud profesional incluido',
     description: 'Te instalamos el mejor software de gestión empresarial para llevar adelante tu empresa. Sin costos adicionales, sin mantenimiento.',
-    image: '/img/5.1_beneficio_erp.png',
+    image: getAssetPath('/img/5.1_beneficio_erp.png'),
   },
   {
     id: 'equipo',
     title: 'Equipo multidisciplinario dedicado',
     description: 'Contadores públicos, ingenieros de sistemas e ingenieros industriales trabajando para tu empresa. Experiencia y profesionalismo garantizados.',
-    image: '/img/5.2_beneficio_equipo.png',
+    image: getAssetPath('/img/5.2_beneficio_equipo.png'),
   },
   {
     id: 'mantenimiento',
     title: 'Sin mantenimiento ni alquileres',
     description: 'Olvídate de pagos mensuales fijos por software. Sin actualizaciones, sin licencias, sin sorpresas. Todo está incluido.',
-    image: '/img/5.3_beneficio_sin_mantenimiento.png',
+    image: getAssetPath('/img/5.3_beneficio_sin_mantenimiento.png'),
   },
   {
     id: 'inscripcion',
     title: 'Afiliación rápida y simple',
     description: 'Regístrate con tu DNI o RUC en minutos. Pago único de S/ 99 soles por inscripción y listo. Sin trámites complicados.',
-    image: '/img/5.4_beneficio_inscripcion_simple.png',
+    image: getAssetPath('/img/5.4_beneficio_inscripcion_simple.png'),
   },
   {
     id: 'comision',
     title: 'Solo pagas cuando vendes',
     description: 'Comisión del 2% + IGV sobre tus ventas. Si no vendes, no pagas. Tu éxito es nuestro éxito. Simple y transparente.',
-    image: '/img/5.5_beneficio_comision.png',
+    image: getAssetPath('/img/5.5_beneficio_comision.png'),
   },
 ] as const
 
@@ -96,7 +98,7 @@ export const TESTIMONIALS = [
     position: 'Gerente General',
     company: 'Distribuidora El Sol SAC',
     sector: 'Comercio',
-    avatar: '/img/7.1_avatar_empresario1.png',
+    avatar: getAssetPath('/img/7.1_avatar_empresario1.png'),
     rating: 5,
     text: 'Antes gastábamos más de S/ 2,500 al mes entre contador y software. Con IZICONT pagamos solo cuando vendemos y tenemos todo integrado. La mejor decisión para nuestro flujo de caja.',
   },
@@ -106,7 +108,7 @@ export const TESTIMONIALS = [
     position: 'CEO & Fundadora',
     company: 'Textiles Andinos EIRL',
     sector: 'Manufactura',
-    avatar: '/img/7.2_avatar_empresaria2.png',
+    avatar: getAssetPath('/img/7.2_avatar_empresaria2.png'),
     rating: 5,
     text: 'El ERP que nos dieron es increíble. Vemos todo en tiempo real y el equipo de contadores siempre está disponible. Ya no me preocupo por SUNAT, ellos se encargan de todo.',
   },
@@ -116,7 +118,7 @@ export const TESTIMONIALS = [
     position: 'Co-Founder',
     company: 'TechCommerce Solutions SRL',
     sector: 'E-commerce',
-    avatar: '/img/7.3_avatar_empresario3.png',
+    avatar: getAssetPath('/img/7.3_avatar_empresario3.png'),
     rating: 5,
     text: 'Somos una startup en crecimiento. El modelo de comisión es perfecto porque cuando teníamos pocas ventas pagábamos poco, y ahora que crecimos seguimos pagando justo. Transparente y escalable.',
   },
@@ -168,7 +170,7 @@ export const HOW_IT_WORKS = [
       'Registro 100% online',
       'Configuración inmediata',
     ],
-    image: '/img/4.1_paso1_inscribete.png',
+    image: getAssetPath('/img/4.1_paso1_inscribete.png'),
   },
   {
     step: 2,
@@ -181,7 +183,7 @@ export const HOW_IT_WORKS = [
       'Cumplimiento con SUNAT y SUNAFIL',
       'Asesoría continua incluida',
     ],
-    image: '/img/4.2_paso2_nosotros_trabajamos.png',
+    image: getAssetPath('/img/4.2_paso2_nosotros_trabajamos.png'),
   },
   {
     step: 3,
@@ -194,7 +196,7 @@ export const HOW_IT_WORKS = [
       'Dashboards personalizados',
       'Exportación de datos ilimitada',
     ],
-    image: '/img/4.3_paso3_consultas_todo.png',
+    image: getAssetPath('/img/4.3_paso3_consultas_todo.png'),
   },
 ] as const
 

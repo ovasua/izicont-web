@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
-import { cn } from '@/lib/utils'
+import { cn, getAssetPath } from '@/lib/utils'
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -38,7 +38,7 @@ export function Navbar() {
           <div className="flex-shrink-0">
             <a href="#inicio" className="flex items-center">
               <img
-                src={isScrolled ? "/img/1.1 Logo Principal.png" : "/img/1.3 Logo en Blanco.png"}
+                src={isScrolled ? getAssetPath("/img/1.1 Logo Principal.png") : getAssetPath("/img/1.3 Logo en Blanco.png")}
                 alt="IZICONT"
                 className="h-10 w-auto transition-opacity"
               />

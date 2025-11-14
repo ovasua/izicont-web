@@ -5,6 +5,7 @@ import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
 import { Badge } from '@/components/ui/Badge'
 import { PRICING } from '@/lib/constants'
+import { getAssetPath } from '@/lib/utils'
 
 export function Hero() {
   return (
@@ -12,7 +13,7 @@ export function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="/img/2.1 Hero Background Principal.png"
+          src={getAssetPath("/img/2.1 Hero Background Principal.png")}
           alt="Background IZICONT"
           className="w-full h-full object-cover"
         />
@@ -111,7 +112,7 @@ export function Hero() {
               {/* ERP Dashboard Mockup */}
               <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/20">
                 <img
-                  src="/img/2.2 Dashboard ERP Mockup.png"
+                  src={getAssetPath("/img/2.2 Dashboard ERP Mockup.png")}
                   alt="Dashboard ERP IZICONT"
                   className="w-full h-auto rounded-lg"
                 />
