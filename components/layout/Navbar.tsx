@@ -33,14 +33,14 @@ export function Navbar() {
       )}
     >
       <Container>
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="#inicio" className="flex items-center">
               <img
                 src={isScrolled ? getAssetPath("/img/1.1 Logo Principal.png") : getAssetPath("/img/1.3 Logo en Blanco.png")}
                 alt="IZICONT"
-                className="h-12 w-auto transition-opacity"
+                className="h-16 w-auto transition-opacity"
               />
             </a>
           </div>
