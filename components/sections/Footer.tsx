@@ -15,7 +15,7 @@ export function Footer() {
             <img
               src={getAssetPath("/img/1.3 Logo en Blanco.png")}
               alt="IZICONT"
-              className="h-10 w-auto mb-4"
+              className="h-30 w-auto mb-4"
             />
             <p className="text-white/80 mb-4 leading-relaxed">
               Despreocúpate de los números. Enfócate en crecer.

@@ -40,7 +40,7 @@ export function Navbar() {
               <img
                 src={isScrolled ? getAssetPath("/img/1.1 Logo Principal.png") : getAssetPath("/img/1.3 Logo en Blanco.png")}
                 alt="IZICONT"
-                className="h-10 w-auto transition-opacity"
+                className="h-30 w-auto transition-opacity"
               />
             </a>
           </div>

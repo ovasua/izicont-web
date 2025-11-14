@@ -23,37 +23,37 @@ export const SERVICES = [
   {
     id: 'outsourcing',
     title: 'Outsourcing Contable',
-    icon: getAssetPath('/img/6.1_icono_outsourcing_contable.svg'),
+    icon: getAssetPath('/img/6.1_icono_outsourcing_contable.png'),
     description: 'Procesamiento completo de tu contabilidad. Registros, libros, balances y estados financieros. Todo al día, siempre.',
   },
   {
     id: 'tributaria',
     title: 'Asesoría Tributaria',
-    icon: getAssetPath('/img/6.2_icono_asesoria_tributaria.svg'),
+    icon: getAssetPath('/img/6.2_icono_asesoria_tributaria.png'),
     description: 'Cumplimiento tributario con SUNAT. Declaraciones, PDT, libros electrónicos y planificación fiscal.',
   },
   {
     id: 'laboral',
     title: 'Asesoría Laboral',
-    icon: getAssetPath('/img/6.3_icono_asesoria_laboral.svg'),
+    icon: getAssetPath('/img/6.3_icono_asesoria_laboral.png'),
     description: 'Gestión de planillas, contratos, y cumplimiento con SUNAFIL. Evita multas y contingencias laborales.',
   },
   {
     id: 'constitucion',
     title: 'Constitución de Empresas',
-    icon: getAssetPath('/img/6.4_icono_constitucion_empresas.svg'),
+    icon: getAssetPath('/img/6.4_icono_constitucion_empresas.png'),
     description: 'Te ayudamos a formalizar tu negocio. Constitución legal, RUC, licencias y todo lo necesario para empezar.',
   },
   {
     id: 'erp',
     title: 'ERP Cloud Completo',
-    icon: getAssetPath('/img/6.5_icono_erp_cloud.svg'),
+    icon: getAssetPath('/img/6.5_icono_erp_cloud.png'),
     description: 'Sistema de gestión empresarial con módulos de ventas, compras, inventario, finanzas y más. Siempre actualizado.',
   },
   {
     id: 'reportes',
     title: 'Reportes en Tiempo Real',
-    icon: getAssetPath('/img/6.6_icono_reportes_tiempo_real.svg'),
+    icon: getAssetPath('/img/6.6_icono_reportes_tiempo_real.png'),
     description: 'Dashboards personalizados, KPIs, gráficos y reportes exportables. Información para tomar decisiones inteligentes.',
   },
 ] as const
