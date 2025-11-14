@@ -5,7 +5,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: '/izicont-web',
-  assetPrefix: '/izicont-web/',
+  assetPrefix: '/izicont-web',
 }
 
 export default nextConfig
