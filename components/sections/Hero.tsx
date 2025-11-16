@@ -109,7 +109,7 @@ export function Hero() {
             </motion.p>
           </motion.div>
 
-          {/* Mockup ERP */}
+          {/* Mockup ERP - Desktop Version */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -134,6 +134,22 @@ export function Hero() {
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-72 h-72 bg-accent/20 rounded-full blur-3xl" />
             <div className="absolute -bottom-8 -left-8 w-64 h-64 bg-primary-700/20 rounded-full blur-3xl" />
+          </motion.div>
+
+          {/* Mockup ERP - Mobile Version */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="relative lg:hidden mt-8"
+          >
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-white/20 max-w-md mx-auto">
+              <img
+                src={getAssetPath("/img/2.3 Hero Mobile Version.png")}
+                alt="Dashboard ERP IZICONT Mobile"
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
           </motion.div>
         </div>
       </Container>

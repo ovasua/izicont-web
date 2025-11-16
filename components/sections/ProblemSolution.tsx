@@ -24,12 +24,13 @@ export function ProblemSolution() {
 
   return (
     <section id="problema-solucion" className="py-20 lg:py-32 bg-gray-100 relative overflow-hidden">
-      {/* Background pattern */}
+      {/* Background pattern image */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'linear-gradient(to right, #0F2C59 1px, transparent 1px), linear-gradient(to bottom, #0F2C59 1px, transparent 1px)',
-          backgroundSize: '20px 20px'
-        }} />
+        <img
+          src={getAssetPath("/img/8.1_patron_tech_grid.png")}
+          alt=""
+          className="w-full h-full object-cover"
+        />
       </div>
 
       <Container className="relative z-10">

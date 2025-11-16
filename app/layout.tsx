@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: 'IZICONT',
     images: [
       {
-        url: '/img/og-image.png',
+        url: '/img/10.1_og_image.png',
         width: 1200,
         height: 630,
         alt: 'IZICONT - Servicio Contable + ERP Cloud',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'IZICONT - Servicio Contable + ERP Cloud',
     description: 'Paga solo cuando vendes. Sin mensualidades fijas.',
-    images: ['/img/og-image.png'],
+    images: ['/img/10.1_og_image.png'],
   },
   robots: {
     index: true,

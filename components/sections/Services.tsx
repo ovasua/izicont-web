@@ -4,10 +4,19 @@ import { motion } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
 import { Card } from '@/components/ui/Card'
 import { SERVICES } from '@/lib/constants'
+import { getAssetPath } from '@/lib/utils'
 
 export function Services() {
   return (
-    <section id="servicios" className="py-20 lg:py-32 bg-white">
+    <section id="servicios" className="py-20 lg:py-32 bg-white relative overflow-hidden">
+      {/* Decorative background element */}
+      <div className="absolute top-0 right-0 w-1/3 h-1/3 opacity-5">
+        <img
+          src={getAssetPath("/img/8.2_decorativo_crecimiento.png")}
+          alt=""
+          className="w-full h-full object-contain"
+        />
+      </div>
       <Container>
         {/* Header */}
         <motion.div

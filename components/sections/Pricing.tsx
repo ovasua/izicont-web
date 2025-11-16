@@ -5,10 +5,19 @@ import { Container } from '@/components/ui/Container'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 import { PRICING, PRICING_TABLE } from '@/lib/constants'
+import { getAssetPath } from '@/lib/utils'
 
 export function Pricing() {
   return (
-    <section id="precios" className="py-20 lg:py-32 bg-gradient-to-br from-accent/5 to-primary-700/5">
+    <section id="precios" className="py-20 lg:py-32 bg-gradient-to-br from-accent/5 to-primary-700/5 relative overflow-hidden">
+      {/* Decorative data connection image */}
+      <div className="absolute top-1/4 left-0 w-1/4 h-1/4 opacity-5">
+        <img
+          src={getAssetPath("/img/8.3_decorativo_conexion_datos.png")}
+          alt=""
+          className="w-full h-full object-contain"
+        />
+      </div>
       <Container>
         {/* Header */}
         <motion.div

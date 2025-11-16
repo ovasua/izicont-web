@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
 import { PRICING } from '@/lib/constants'
+import { getAssetPath } from '@/lib/utils'
 
 export function CTA() {
   return (
@@ -12,6 +13,15 @@ export function CTA() {
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent rounded-full blur-3xl" />
+      </div>
+
+      {/* Decorative growth image */}
+      <div className="absolute bottom-0 right-0 w-1/4 h-1/4 opacity-10">
+        <img
+          src={getAssetPath("/img/8.2_decorativo_crecimiento.png")}
+          alt=""
+          className="w-full h-full object-contain"
+        />
       </div>
 
       <Container className="relative z-10">
