@@ -29,16 +29,28 @@ export function Hero() {
             transition={{ duration: 0.6 }}
             className="text-white"
           >
+            {/* Badge diferenciador */}
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mb-4"
+            >
+              <Badge className="bg-accent/20 text-accent border-accent/50">
+                🇵🇪 La única solución peruana que une Contabilidad + ERP
+              </Badge>
+            </motion.div>
+
             {/* Headline */}
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight drop-shadow-lg"
             >
-              Despreocúpate de los números.
+              Crece sin límites.
               <br />
-              <span className="text-accent">Enfócate en crecer.</span>
+              <span className="text-accent">Paga solo cuando vendes.</span>
             </motion.h1>
 
             {/* Subheadline */}
@@ -81,7 +93,7 @@ export function Hero() {
               <Button variant="primary" size="lg">
                 Comenzar por S/ {PRICING.inscription}
               </Button>
-              <Button variant="outline" size="lg">
+              <Button variant="outline" size="lg" className="border-2 hover:bg-white hover:text-primary-900 transition-all">
                 Ver Planes y Precios
               </Button>
             </motion.div>
@@ -110,7 +122,7 @@ export function Hero() {
               className="relative"
             >
               {/* ERP Dashboard Mockup */}
-              <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/20">
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-white/20">
                 <img
                   src={getAssetPath("/img/2.2 Dashboard ERP Mockup.png")}
                   alt="Dashboard ERP IZICONT"
